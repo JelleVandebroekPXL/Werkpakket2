@@ -1,0 +1,264 @@
+[
+      {
+        "id": "Classic_Legends",
+        "title": "Classic Legends Box",
+        "description": "In deze box vind je shirts van legendarische voetballers uit het verleden. Van Pelé tot Maradona, een eerbetoon aan de grootheden van het spel.",
+        "img": "ClassicLegends.png",
+        "price": 249.99,
+        "btw": 21,
+        "stock": 50,
+        "filter": {
+          "sport": "Voetbal",
+          "prijs": "€150+"
+        }
+      },
+      {
+        "id": "European_Powerhouses",
+        "title": "European Powerhouses Box",
+        "description": "Ontdek shirts van topclubs zoals Barcelona, Bayern München, en Liverpool. Een must-have voor fans van Europese voetbalglorie.",
+        "img": "EuropeanPowerhouse.png",
+        "price": 89.99,
+        "btw": 21,
+        "stock": 30,
+        "filter": {
+          "sport": "Voetbal",
+          "prijs": "€50-€100"
+        }
+      },
+      {
+        "id": "National_Teams",
+        "title": "National Teams Box",
+        "description": "Vertegenwoordig je land met trots! Deze box bevat shirts van verschillende nationale teams, ideaal voor internationale voetbalfans.",
+        "img": "NationalTeams.png",
+        "price": 59.99,
+        "btw": 21,
+        "stock": 40,
+        "filter": {
+          "sport": "Voetbal",
+          "prijs": "€50-€100"
+        }
+      },
+      {
+        "id": "Underdog_Surprise",
+        "title": "Underdog Surprise Box",
+        "description": "Voor de fans van minder bekende clubs. Ontdek verborgen juweeltjes en ondergewaardeerde teams in deze unieke mysterybox.",
+        "img": "UnderdogSurprise.png",
+        "price": 39.99,
+        "btw": 21,
+        "stock": 20,
+        "filter": {
+          "sport": "Voetbal",
+          "prijs": "-€50"
+        }
+      },
+      {
+        "id": "Goalkeepers_Haven",
+        "title": "Goalkeeper's Haven Box",
+        "description": "Een eerbetoon aan de keepers! Ontvang shirts van legendarische doelmannen en iconische keepertenues.",
+        "img": "GoalkeepersHaven.png",
+        "price": 49.99,
+        "btw": 21,
+        "stock": 25,
+        "filter": {
+          "sport": "Voetbal",
+          "prijs": "-€50"
+        }
+      },
+      {
+        "id": "Futuristic_Fusion",
+        "title": "Futuristic Fusion Box",
+        "description": "Moderne ontwerpen en innovatieve stijlen van huidige seizoenen. Ontdek de toekomst van voetbalmode met deze box.",
+        "img": "FuturisticFusion.png",
+        "price": 69.99,
+        "btw": 21,
+        "stock": 35,
+        "filter": {
+          "sport": "Voetbal",
+          "prijs": "€50-€100"
+        }
+      },
+      {
+        "id": "DerbyDay_Rivalry",
+        "title": "Derby Day Rivalry Box",
+        "description": "Voor de fans die houden van intense derby's en klassieke rivaliteiten. Ontvang shirts van clubs die betrokken zijn bij legendarische derby's.",
+        "img": "DerbyDayRivalry.png",
+        "price": 59.99,
+        "btw": 21,
+        "stock": 15,
+        "filter": {
+          "sport": "Voetbal",
+          "prijs": "€50-€100"
+        }
+      },
+      {
+        "id": "Women_Football",
+        "title": "Women in Football Box",
+        "description": "Een eerbetoon aan het vrouwenvoetbal. Ontdek shirts van nationale vrouwenteams en inspirerende speelsters die de sport hebben veranderd.",
+        "img": "WomensFootball.png",
+        "price": 29.99,
+        "btw": 21,
+        "stock": 10,
+        "filter": {
+          "sport": "Voetbal",
+          "prijs": "-€50"
+        }
+      },
+      {
+        "id": "StreetwearFusion",
+        "title": "Streetwear Fusion Box",
+        "description": "Combineer je liefde voor voetbal met streetwear. Deze box bevat trendy voetbalshirts die perfect passen bij een casual look.",
+        "img": "StreetwearFusion.png",
+        "price": 49.99,
+        "btw": 21,
+        "stock": 45,
+        "filter": {
+          "sport": "Voetbal",
+          "prijs": "-€50"
+        }
+      },
+      {
+        "id": "Youth_Academy",
+        "title": "Youth Academy Prospects Box",
+        "description": "Ontdek shirts van veelbelovende jonge talenten en talentvolle spelers die zijn voortgekomen uit jeugdacademies.",
+        "img": "YouthAcademyProspect.png",
+        "price": 44.99,
+        "btw": 21,
+        "stock": 18,
+        "filter": {
+          "sport": "Voetbal",
+          "prijs": "-€50"
+        }
+      },
+      {
+            "id": "International_Flavour",
+            "title": "International Flavour Box",
+            "description": "Een mix van shirts uit diverse voetbalculturen over de hele wereld. Ontdek de kleurrijke diversiteit van het mondiale spel.",
+            "img": "InternationalFlavour.png",
+            "price": 34.99,
+            "btw": 21,
+            "stock": 80,
+            "filter": {
+              "sport": "Voetbal",
+              "prijs": "-€50"
+            }
+          },
+          {
+            "id": "Captains_Leadership",
+            "title": "Captain's Leadership Box",
+            "description": "Shirts van legendarische aanvoerders die hun teams naar glorie hebben geleid. Een eerbetoon aan leiderschap op het veld.",
+            "img": "CaptainsLeadership.png",
+            "price": 199.99,
+            "btw": 21,
+            "stock": 100,
+            "filter": {
+              "sport": "Voetbal",
+              "prijs": "€150+"
+            }
+          },
+          {
+            "id": "WorldCup_Glory",
+            "title": "FIFA World Cup Glory Box",
+            "description": "Alleen voor de echte voetbalhistorici. Ontdek shirts van teams die geschiedenis hebben geschreven op het grootste podium, de FIFA Wereldbeker.",
+            "img": "WorldCupGlory.png",
+            "price": 69.99,
+            "btw": 21,
+            "stock": 75,
+            "filter": {
+              "sport": "Voetbal",
+              "prijs": "€50-€100"
+            }
+          },
+          {
+            "id": "Basketball_Ballers",
+            "title": "Basketball Ballers Box",
+            "description": "Een eerbetoon aan de huidige generatie basketbalsterren. Ontdek jerseys van moderne grootheden zoals Stephen Curry, Kevin Durant, Giannis Antetokounmpo en Luka Dončić. Deze box belicht de actuele helden die de basketbalwereld domineren.",
+            "img": "BasketballBallers.png",
+            "price": 59.99,
+            "btw": 21,
+            "stock": 60,
+            "filter": {
+              "sport": "Basketbal",
+              "prijs": "€50-€100"
+            }
+          },
+          {
+            "id": "Basketball_AllStars",
+            "title": "Basketball All-Stars Collection",
+            "description": "Ontdek de grootsheid van het basketbalspel met jerseys van iconische spelers zoals Michael Jordan, Kobe Bryant, LeBron James en Shaquille O'Neal. Deze box brengt een eerbetoon aan de kracht en finesse van basketballegendes. Verwacht een mix van historische en moderne jerseys die de evolutie van het spel weerspiegelen.",
+            "img": "BasketballAllStars.png",
+            "price": 129.99,
+            "btw": 21,
+            "stock": 120,
+            "filter": {
+              "sport": "Basketbal",
+              "prijs": "€100-€150"
+            }
+          },
+          {
+            "id": "Racing Legends",
+            "title": "Racing Legends Crate",
+            "description": "Deze box omvat een breed scala aan legendarische autocoureurs uit verschillende disciplines, zoals Ayrton Senna (Formule 1), Richard Petty (NASCAR), Juan Manuel Fangio (Formule 1), en andere invloedrijke figuren in de autosport. Ontvang shirts van racende iconen en vier de rijke geschiedenis van het racen als geheel.",
+            "img": "RacingLegends.png",
+            "price": 199.99,
+            "btw": 21,
+            "stock": 150,
+            "filter": {
+              "sport": "Racing",
+              "prijs": "€150+"
+            }
+          },
+          {
+            "id": "Formula_Finest",
+            "title": "Formula 1 Finest Box",
+            "description": "Deze box richt zich op de absolute top van de Formule 1. Ontvang shirts van legendarische coureurs zoals Ayrton Senna, Michael Schumacher, Lewis Hamilton en Max Verstappen. Het belicht de hoogtepunten van de Formule 1-geschiedenis en de dominante coureurs op het hoogste niveau van de autosport.",
+            "img": "FormulaOneFinest.png",
+            "price": 119.99,
+            "btw": 21,
+            "stock": 110,
+            "filter": {
+              "sport": "Racing",
+              "prijs": "€100-€150"
+            }
+          },
+          {
+            "id": "Monthly_Spectacle",
+            "title": "Monthly Sports Spectacle",
+            "description": "Abonnement op maandelijkse sportbeleving met diverse items. Exclusieve sportproducten rechtstreeks naar je deur!",
+            "img": "MonthlySportsSpectacle.png",
+            "price": 650,
+            "btw": 21,
+            "stock": 80,
+            "filter": {
+              "sport": "Abonnement",
+              "prijs": "€150+"
+            }
+          },
+          {
+            "id": "Quarterly_Seeker",
+            "title": "Quarterly Thrill Seeker",
+            "description": "Abonnement op kwartaal thrill-seeking met opwindende sportieve items. Mis het avontuur niet!",
+            "img": "QuarterlyThrillSeeker.png",
+            "price": 150,
+            "btw": 21,
+            "stock": 60,
+            "filter": {
+              "sport": "Abonnement",
+              "prijs": "€100-€150"
+            }
+          },
+          {
+            "id": "Seasonal_Explorer",
+            "title": "Seasonal Sports Explorer",
+            "description": "Abonnement op seizoensgebonden sportverkenning met unieke sportartikelen. Laat je verrassen!",
+            "img": "SeasonalSportsExplorer.png",
+            "price": 200,
+            "btw": 21,
+            "stock": 70,
+            "filter": {
+              "sport": "Abonnement",
+              "prijs": "€150+"
+            }
+          }
+        ]
+           
+      

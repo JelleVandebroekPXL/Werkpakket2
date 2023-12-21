@@ -1,0 +1,492 @@
+@use 'base' as *;
+
+.header-nav //Elke pagina behalve login
+{
+    @include flexLayout(space-between);
+    .nav
+    {
+        width: 25%;
+        ul
+        {
+            list-style: none;
+            display: flex;
+            overflow: hidden;
+            margin-left: 25px;
+            li
+            {
+                margin: 10px;
+                font-size: 24px;
+                font-family: $font-montserrat;
+                font-weight: bold;
+                a
+                {
+                    text-decoration: none;
+                    color: $color-black;
+                    &:hover
+                    {
+                        color: $color-primary;
+                        text-decoration: underline;
+                    }
+                }
+                
+            }
+        }
+    }
+    .logo
+    {  
+        width: 50%;
+        a
+        {
+        @include flexLayout();
+            img
+            {
+                width: 15%;
+            }
+        }
+    }
+    .info
+    {
+        display: flex;
+        justify-content: right;
+        margin-right: 50px;
+        width: 25%;
+        a
+        {
+            color: $color-black;
+            margin: 25px;
+            font-size: 30px;
+            &:hover
+            {
+                color: $color-primary;
+
+            }
+        }
+
+    }
+}
+    
+.sub-heading //index.html Welke box kies jij?
+{ 
+    font-family: $font-montserrat;
+    font-size: 70px;
+    color: $color-white;
+    margin-bottom: 60px;
+}
+
+.main-button //index.html Buy Now, Read More en details.html winkelmandje
+{
+    width: 170px;
+    height: 45px;
+    font-family: $font-montserrat;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-primary;
+    background-color: transparent;
+    border: 1px, solid, $color-white;
+    cursor: pointer;
+    transition: all .4s;
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}
+
+.card //index.html bij Top Products en products.html
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid $color-black; 
+    width: 20vw;
+    height: 60vh;
+    padding: 20px;
+    img
+    {
+        width: 100%;
+        max-height: 50%;
+        object-fit: cover;
+    }
+    &-content 
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card-title
+        {
+            margin-top: 20px
+        }
+        .card-description
+        {
+            margin-top: 20px;
+        }
+        .price-and-button
+        {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+            .card-price
+            {
+                flex: 1;
+                width: 50%;
+                font-size: 25px;
+                padding: auto;
+            }
+            .card-button
+            {
+                display: flex;
+                text-decoration: none;
+                .button
+                {
+                padding: 2%;
+                width: 200px;
+                font-family: $font-montserrat;
+                font-size: 20px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: $color-primary;
+                background-color: transparent;
+                cursor: pointer;
+                transition: all .4s;
+                &:hover 
+                {
+                    background-color: $color-primary;
+                    color: $color-white;
+                }
+                }
+            }
+        }
+    }
+}
+.products-heading //products.html
+{
+    font-family: $font-montserrat;
+    font-size: 70px;
+    color: $color-secondary;
+    margin-bottom: 25px;
+}
+.products-description //products.html
+{
+    font-family: $font-gabarito;
+    font-size: 20px;
+    color: $color-white;
+    margin-bottom: -85px;
+    padding: 3%;
+    border: 2px solid black;
+}
+.products //section in products.html
+{
+    width: 100vw;
+    height: 100%;
+    margin-top: 5%;
+    .filters
+    {
+        width: 30vw;
+        height: 10vh;
+        @include flexLayout(space-around, end); 
+        .filter1
+        {
+           @extend %filterOpmaak;
+        }
+        .filter2
+        {
+            @extend %filterOpmaak;
+        }
+    }
+}
+.product-list //lijst met alle producten in products.html
+{
+    .gallery 
+    {
+        .cards 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .card
+            {
+                width: 25vw;
+                margin: 2%;
+            }
+        }
+    }
+}
+.pagination //onder de product-list in products.html
+{
+    @include flexLayout();
+    height: 20vh;
+    a 
+    {
+        font-size: 20px;
+        font-family: $font-gabarito;
+        color: $color-black;
+        float: left;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: background-color .3s;
+        &:hover:not(.active) {
+            background-color: $color-white;
+        }
+    }
+    .active 
+    {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}
+.login-heading //heading in login.html
+{
+    @include flexLayout();
+    width: 100%;
+    .login-logo
+    {
+        width: 7.5%;
+        img
+        {
+            width: 100%;
+        }
+    }
+}
+.login //section met invulvelden in login.html
+{
+    height: 100vh;
+    &-icon
+    {
+        position: absolute;
+        z-index: 500;
+        width: 100px;
+        height: 100px;
+        margin: -65px 46.5%;
+        background-color: $color-primary; 
+        border-radius: 50%; 
+        @include flexLayout();
+        i
+        {
+            color: $color-white;
+            font-size: 60px;
+        }
+    }
+    &-main
+    {
+        position: relative;
+        border: 1px solid $color-black;
+        width: 30%;
+        height: 40vh;
+        border-radius: 45px;
+        background-color: $color-white;
+        box-shadow: 0 15px 6px rgba(0, 0, 0, 0.15);
+        flex-direction: column;
+        @include flexLayout();
+        margin: -20px auto;
+        .username
+        {
+            @extend %loginInvulveld;
+        }
+        .password
+        {
+            @extend %loginInvulveld;
+        }
+        .remember-and-password
+        {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            .remember-me
+            {
+                width: 50%;
+                input
+                {
+                    width: 20%;
+                    font-size: 15px;
+                    
+                }
+            }
+            .forgot-password
+            { 
+                a
+                {
+                    width: 5%;
+                    font-size: 15px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &-sub
+    {
+        width: 25%;
+        height: 40vh;
+        border-radius: 45px;
+        @include flexLayout(center, end);
+        margin: -230px 0 0 575px;
+        &-text
+        {
+        font-size: 25px;
+        width: 100%;
+        border-radius: 45px;
+        background-color: white;
+        border: 1px solid $color-black;
+        font-family: $font-gabarito;
+        padding: 15px;
+        &:hover
+        {
+            background-color: $color-primary;
+            color: $color-white;
+        }
+        }
+    }
+    &-text
+    {
+        &-quote
+        {
+            width: 400px;
+            height: 125px;
+            margin: 35px 0 0 575px;
+            text-align: center;
+            font-family: $font-youngSerif;
+        }
+        &-line
+        {
+            width: 350px;
+            margin: -75px 0 0 600px;
+            height: 2px;
+            background-color: $color-black;
+        }
+        &-name
+        {
+            width: 150px;
+            margin: 10px auto;
+            text-align: center;
+            font-family: $font-youngSerif;
+        }
+    }
+}
+
+.ConfirmButton
+{
+    background-color: $color-primary;
+    color: $color-white;
+    border: 2px solid $color-white;
+    padding: 15px;
+    margin: 0 0 0 1250px;
+    font-size: 20px;
+    font-family: $font-montserrat;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover
+    {
+        background-color: #133e6e;
+    }
+}
+
+.PayButton
+{
+    background-color: $color-primary;
+    color: $color-white;
+    border: 2px solid $color-white;
+    padding: 15px;
+    margin: 0 0 0 775px;
+    font-size: 20px;
+    font-family: $font-montserrat;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover
+    {
+        background-color: #133e6e;
+    }
+}
+
+.icon
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 250px;
+    color: #2bbd6f;
+}
+
+.GoBackButton
+{
+    background-color: $color-primary;
+    color: $color-white;
+    border: 2px solid $color-white;
+    padding: 15px;
+    margin: 0 0 0 1225px;
+    font-size: 20px;
+    font-family: $font-montserrat;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover
+    {
+        background-color: #133e6e;
+    }
+}
+
+#component
+{
+    width: 100%;
+    height: 100px;
+}
+
+.quantity-div 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.quantity-button 
+{
+    border: 1px solid $color-primary;
+    padding: 15px;
+    width: 100px;
+    height: 75px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.quantity-div p
+{
+    border: 6px solid $color-primary;
+    height: 64px;
+    width: 200px;
+    text-align: center;
+    color: $color-primary;
+    font-family: $font-youngSerif;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.prijsoverzicht
+{
+    margin: 20px 150px;
+
+}
+.checkout-button
+{
+    width: 170px;
+    height: 45px;
+    margin: 0px 150px 20px 150px;
+    font-family: $font-montserrat;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-primary;
+    background-color: transparent;
+    border: 1px, solid, $color-white;
+    cursor: pointer;
+    transition: all .4s;
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}
+

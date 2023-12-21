@@ -1,0 +1,75 @@
+$color-black: #000;
+$color-filter: #383838;
+$color-primary: #2C8AF2;
+$color-secondary: #878787;
+$color-white: #fff;
+
+$font-montserrat: 'Montserrat', sans-serif;
+$font-gabarito: 'Gabarito', cursive;
+$font-youngSerif: 'Young Serif', serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flexLayout($justify: center, $align: center) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+
+@mixin textStyles($transform: uppercase) {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: $transform;
+    text-align: center;
+}
+
+@mixin positioning($topValue) {
+    position: absolute;
+    top: $topValue;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+%fullSpace {
+    width: 100%;
+    height: 100%;
+}
+
+%loginInvulveld
+{
+    @include flexLayout();
+    margin: 0 0 15px 0;
+    label
+    {
+        font-size: 18px;
+        i
+        {
+            font-size: 50px;
+            margin-right: 8px;
+            color: #3498db;
+            border: 2px solid $color-black;
+        }
+    } 
+    input
+    {
+        width: 200px;
+        padding: 15px;
+        box-sizing: border-box;
+        border: 2px solid $color-black;
+        font-size: 16px;
+        font-family: $font-gabarito;
+    }
+}
+
+%filterOpmaak
+{
+    background-color: $color-filter;
+    color: $color-white;
+    width: 150px;
+    padding: 2%;
+    text-align: center;
+}

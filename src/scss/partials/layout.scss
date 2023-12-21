@@ -1,0 +1,303 @@
+@use 'base' as *;
+
+body //algemene opmaak van document
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+.header //index.html en products.html zorgt onder andere voor achtergrondafbeelding
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(black, .6), rgba(black, .4)), url('../assets/bg-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-banner {
+        @include positioning(50%);
+        text-align: center;
+    }
+}
+.about //index.html Foto links - Info rechts
+{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+
+    &-left {
+        width: 30%;
+        position: relative;
+        margin-left: 50px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &-right {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 100px;
+        box-sizing: border-box;
+
+        .about-title
+        {
+            font-size: 30px;
+            font-family: $font-gabarito;    
+        }
+        .stars {
+            margin: 30px 0;
+        }
+
+        .star {
+            font-size: 15px;
+            color: $color-primary;
+        }
+        
+        .star + .star {
+            margin-left: 10px;
+        }
+
+        .description {
+            font-family: $font-montserrat;
+            font-size: 25px;
+            font-style: italic;
+            color: $color-secondary;
+            text-align: justify;
+
+            &::first-letter {
+                padding-left: 50px;
+            }
+        }
+    }
+}
+.topProducts //index.html stukje onder about met de 3 Top Producten
+{
+    width: 100vw;
+    height: 100vh;
+    .section-title
+    {
+        font-size: 30px;
+        margin-bottom: 50px;
+        font-family: $font-gabarito;
+        text-align: center; 
+    }
+    .gallery {
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
+footer //index.html en products.html stukje onderaan de pagina
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .footer-logo
+    {
+        width: 25vw;
+        height: 100%;
+        flex-direction: column;  
+        @include flexLayout();
+        img 
+        {
+            width: 45%;
+        }
+    }
+    .footer-social-media 
+    {
+        width: 200px;
+        margin-bottom: 70px;
+        .social-media
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .social-media-item 
+            {
+                list-style: none;
+            }
+            .social-media-link 
+            {
+                text-decoration: none;
+                font-size: 30px;
+                color: $color-black;
+                transition: color .7s;
+                    
+                &:hover 
+                {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+    .footer-mail, .footer-phone
+    {
+        font-size: 25px;
+        font-family: $font-gabarito;
+        flex-direction: column; 
+        @include flexLayout(); 
+        padding: 10px;
+        width: 25vw;  
+        i
+        {
+            margin-right: 15px;
+        }
+        &:hover 
+        {
+            color: $color-primary                
+        }
+    }
+
+}
+.heading //details.html en login.html aangepaste header
+{
+    width: 100%;
+    height: 30vh;
+    position: relative;
+
+    &-banner {
+        @include positioning(50%);
+        text-align: center;
+    }
+}
+.product-details //details.html vergelijkbaar met about (Foto links - Info rechts)
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .product-img {
+        width: 60%;
+        position: relative;
+        margin-left: 50px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .product-info {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 50px;
+        box-sizing: border-box;
+
+        .product-name
+        {
+            font-size: 50px;
+            font-family: $font-gabarito; 
+            margin-bottom: 40px;   
+        }
+        .product-description {
+            font-family: $font-montserrat;
+            font-size: 25px;
+            color: $color-secondary;
+        }
+        .product-price
+        {
+                width: 100%;
+                font-size: 85px;
+                margin-top: 10px;
+        }
+        hr
+        {
+            width: 100%;
+            height: 2px;
+            margin-bottom: 50px;
+            background-color: $color-black;
+        }
+    }
+}
+.shoppingCart
+{
+    background-color: $color-white;
+    border: 2px solid $color-black;
+    border-radius: 50px;
+    width: 80%;
+    height: 80%;
+    margin: 50px auto;
+}
+
+.mandje
+{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productDetail
+{
+    display: grid;
+    grid: "image name quantity price vuilnis" 1fr / 4fr 4fr 2fr 3fr 2fr;
+    gap: 80px;
+    &-image
+    {
+        grid-area: image;
+        width: 150%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-name
+    {
+        grid-area: name;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-quantity
+    {
+        grid-area: quantity;
+    }
+    &-price
+    {
+        grid-area: price;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-remove
+    {
+        grid-area: vuilnis;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.CartTotalPrice
+{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 0 1250px;
+}
+
+.Checkout
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CheckoutForm
+{
+    background-color: $color-white;
+    border: 2px solid $color-black;
+    border-radius: 50px;
+    font-size: 25px;
+    padding: 15px;
+    width: 60%;
+    height: 80%;
+    margin: 50px auto;
+}
